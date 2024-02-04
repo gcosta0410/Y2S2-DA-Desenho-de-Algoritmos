@@ -1,0 +1,106 @@
+\hypertarget{classEdmondsKarpGraph}{}\doxysection{Edmonds\+Karp\+Graph Class Reference}
+\label{classEdmondsKarpGraph}\index{EdmondsKarpGraph@{EdmondsKarpGraph}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEdmondsKarpGraph_a3b554608cea0ca59e12bc1ce97bbce52}{Edmonds\+Karp\+Graph}} (int n, const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Graph ready for edmond\textquotesingle{}s-\/karp algorithm constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdmondsKarpGraph_a29b160a3d11bfef52b91afd08ffccad8}{add\+Edge}} (int source, int to, int cap, int dur)
+\begin{DoxyCompactList}\small\item\em Add\textquotesingle{}s an edge to the graph from source to to with capacity cap and duration dur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEdmondsKarpGraph_a351701e11bf625e6d9ae302a6c1af30e}\label{classEdmondsKarpGraph_a351701e11bf625e6d9ae302a6c1af30e}} 
+void \mbox{\hyperlink{classEdmondsKarpGraph_a351701e11bf625e6d9ae302a6c1af30e}{edmonds\+Karp}} ()
+\begin{DoxyCompactList}\small\item\em Edmond\textquotesingle{}s-\/karp algorithm main loop that calculates max flow of all the paths. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEdmondsKarpGraph_a1ecee36b6ba1216a9cfe65dff272856b}{get\+Max\+Flow}} () const
+\begin{DoxyCompactList}\small\item\em Returns a graph\textquotesingle{}s max flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdmondsKarpGraph_a199d9c33879ba370e301e345515ef600}{edmonds\+Karp\+Fixed\+Flow}} (int group\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Variation of the Edmond\textquotesingle{}s-\/karp algorithm main loop that calculates paths according to a given max flow. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEdmondsKarpGraph_aa298729f47ba263798047bfbc21f975c}\label{classEdmondsKarpGraph_aa298729f47ba263798047bfbc21f975c}} 
+void \mbox{\hyperlink{classEdmondsKarpGraph_aa298729f47ba263798047bfbc21f975c}{print\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Prints calculated paths. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEdmondsKarpGraph_a838a4fe2706572834774f6cf8bd9189f}\label{classEdmondsKarpGraph_a838a4fe2706572834774f6cf8bd9189f}} 
+int \mbox{\hyperlink{classEdmondsKarpGraph_a838a4fe2706572834774f6cf8bd9189f}{critical\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Calculates critical path of the whole path and gets it\textquotesingle{}s minimum traversal duration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEdmondsKarpGraph_ad39a520b152aa23fff600c33b7bb8efc}\label{classEdmondsKarpGraph_ad39a520b152aa23fff600c33b7bb8efc}} 
+void \mbox{\hyperlink{classEdmondsKarpGraph_ad39a520b152aa23fff600c33b7bb8efc}{latest\+Finish}} ()
+\begin{DoxyCompactList}\small\item\em Calculates a graph\textquotesingle{}s latest finish, the max wait time for the graph and the nodes where that wait time occurs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEdmondsKarpGraph_ad9de87793b7d6c711b68772bd759b70b}\label{classEdmondsKarpGraph_ad9de87793b7d6c711b68772bd759b70b}} 
+void \mbox{\hyperlink{classEdmondsKarpGraph_ad9de87793b7d6c711b68772bd759b70b}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Reset\textquotesingle{}s the flow of a graph to enable edmond\textquotesingle{}s-\/karp algorithm re-\/running. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEdmondsKarpGraph_a3b554608cea0ca59e12bc1ce97bbce52}\label{classEdmondsKarpGraph_a3b554608cea0ca59e12bc1ce97bbce52}} 
+\index{EdmondsKarpGraph@{EdmondsKarpGraph}!EdmondsKarpGraph@{EdmondsKarpGraph}}
+\index{EdmondsKarpGraph@{EdmondsKarpGraph}!EdmondsKarpGraph@{EdmondsKarpGraph}}
+\doxysubsubsection{\texorpdfstring{EdmondsKarpGraph()}{EdmondsKarpGraph()}}
+{\footnotesize\ttfamily Edmonds\+Karp\+Graph\+::\+Edmonds\+Karp\+Graph (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Graph ready for edmond\textquotesingle{}s-\/karp algorithm constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ number of nodes \\
+\hline
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEdmondsKarpGraph_a29b160a3d11bfef52b91afd08ffccad8}\label{classEdmondsKarpGraph_a29b160a3d11bfef52b91afd08ffccad8}} 
+\index{EdmondsKarpGraph@{EdmondsKarpGraph}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!EdmondsKarpGraph@{EdmondsKarpGraph}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily void Edmonds\+Karp\+Graph\+::add\+Edge (\begin{DoxyParamCaption}\item[{int}]{source,  }\item[{int}]{to,  }\item[{int}]{cap,  }\item[{int}]{dur }\end{DoxyParamCaption})}
+
+
+
+Add\textquotesingle{}s an edge to the graph from source to to with capacity cap and duration dur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em to} & \\
+\hline
+{\em cap} & \\
+\hline
+{\em dur} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdmondsKarpGraph_a199d9c33879ba370e301e345515ef600}\label{classEdmondsKarpGraph_a199d9c33879ba370e301e345515ef600}} 
+\index{EdmondsKarpGraph@{EdmondsKarpGraph}!edmondsKarpFixedFlow@{edmondsKarpFixedFlow}}
+\index{edmondsKarpFixedFlow@{edmondsKarpFixedFlow}!EdmondsKarpGraph@{EdmondsKarpGraph}}
+\doxysubsubsection{\texorpdfstring{edmondsKarpFixedFlow()}{edmondsKarpFixedFlow()}}
+{\footnotesize\ttfamily void Edmonds\+Karp\+Graph\+::edmonds\+Karp\+Fixed\+Flow (\begin{DoxyParamCaption}\item[{int}]{group\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Variation of the Edmond\textquotesingle{}s-\/karp algorithm main loop that calculates paths according to a given max flow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+\_\+size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdmondsKarpGraph_a1ecee36b6ba1216a9cfe65dff272856b}\label{classEdmondsKarpGraph_a1ecee36b6ba1216a9cfe65dff272856b}} 
+\index{EdmondsKarpGraph@{EdmondsKarpGraph}!getMaxFlow@{getMaxFlow}}
+\index{getMaxFlow@{getMaxFlow}!EdmondsKarpGraph@{EdmondsKarpGraph}}
+\doxysubsubsection{\texorpdfstring{getMaxFlow()}{getMaxFlow()}}
+{\footnotesize\ttfamily int Edmonds\+Karp\+Graph\+::get\+Max\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a graph\textquotesingle{}s max flow. 
+
+\begin{DoxyReturn}{Returns}
+max\+Flow 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+codigo/Edmonds\+Karp\+Graph.\+h\item 
+codigo/Edmonds\+Karp\+Graph.\+cpp\end{DoxyCompactItemize}

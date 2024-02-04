@@ -1,0 +1,226 @@
+\hypertarget{classCtcp}{}\doxysection{Ctcp Class Reference}
+\label{classCtcp}\index{Ctcp@{Ctcp}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCtcp_ace822d70146db13eac76202a114701ac}{Ctcp}} (int nodes, int lines, bool dir=true)
+\begin{DoxyCompactList}\small\item\em Constructor\+: nr nodes and direction (default\+: directed) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCtcp_a09efb93fd54df667bc14eef4c6046aa5}{add\+Line}} (int src, int dest, int capacity, int duration)
+\begin{DoxyCompactList}\small\item\em Adds edge from source to destination with a certain capacity and duration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCtcp_a228d369e85854cee9b0e1a5c41d5a101}{load}} (const string \&filename)
+\begin{DoxyCompactList}\small\item\em Loads a graph from a given file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCtcp_a3b6619463f2f0b91cbaa1005fa8a749d}{get\+Max\+Capacity\+Path}} (int st, int end, list$<$ int $>$ $\ast$path)
+\begin{DoxyCompactList}\small\item\em Determine a path for a group. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCtcp_af73f6bddd5dcb907b0e631b5cb9901b6}{get\+Max\+Capacity\+Or\+Least\+Changes}} (int start, int end, list$<$ int $>$ $\ast$path)
+\begin{DoxyCompactList}\small\item\em Output possible non-\/comparable paths that maximize group size and minimize edges. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCtcp_a1150783e6e98fbb82e88cbca97e9c190}\label{classCtcp_a1150783e6e98fbb82e88cbca97e9c190}} 
+void {\bfseries clear} ()
+\item 
+void \mbox{\hyperlink{classCtcp_a1698687d02c5ef9f0470bd2f27fd0d76}{bfs}} (int v)
+\begin{DoxyCompactList}\small\item\em Simple bfs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCtcp_a1f575d059a2da43ba4418d2a9d516c7e}{bfs2}} (int start, int end)
+\item 
+void \mbox{\hyperlink{classCtcp_a5eebad866c1e0a9bbd532018e309d21f}{set\+Path\+To\+Use}} (const list$<$ int $>$ \&path)
+\begin{DoxyCompactList}\small\item\em Sets all nodes being used to true, others to false. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCtcp_a325e1ed4891290d147a3026779696b73}{get\+Max\+Capacity\+With\+Usable\+Nodes}} (int st, int end, list$<$ int $>$ $\ast$path)
+\begin{DoxyCompactList}\small\item\em Determine a path for a group in a graph with used nodes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCtcp_a0fd490659728fdf34c5a5c81a06d2253}{nodes\+Unused}} ()
+\begin{DoxyCompactList}\small\item\em Check nodes being unused. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCtcp_ab544657d2bddb192c849e0c666a04c58}\label{classCtcp_ab544657d2bddb192c849e0c666a04c58}} 
+void {\bfseries visit} (int i)
+\item 
+\mbox{\Hypertarget{classCtcp_a3c6ab28916419631a4f914077e9cdc35}\label{classCtcp_a3c6ab28916419631a4f914077e9cdc35}} 
+void {\bfseries unvisit} (int i)
+\item 
+\mbox{\Hypertarget{classCtcp_a4e5c5208be4f8b7e1dd713dfca407676}\label{classCtcp_a4e5c5208be4f8b7e1dd713dfca407676}} 
+bool {\bfseries visited} (int i)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCtcp_ace822d70146db13eac76202a114701ac}\label{classCtcp_ace822d70146db13eac76202a114701ac}} 
+\index{Ctcp@{Ctcp}!Ctcp@{Ctcp}}
+\index{Ctcp@{Ctcp}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{Ctcp()}{Ctcp()}}
+{\footnotesize\ttfamily Ctcp\+::\+Ctcp (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{int}]{lines,  }\item[{bool}]{dir = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Constructor\+: nr nodes and direction (default\+: directed) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+{\em lines} & \\
+\hline
+{\em dir} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCtcp_a09efb93fd54df667bc14eef4c6046aa5}\label{classCtcp_a09efb93fd54df667bc14eef4c6046aa5}} 
+\index{Ctcp@{Ctcp}!addLine@{addLine}}
+\index{addLine@{addLine}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{addLine()}{addLine()}}
+{\footnotesize\ttfamily void Ctcp\+::add\+Line (\begin{DoxyParamCaption}\item[{int}]{src,  }\item[{int}]{dest,  }\item[{int}]{capacity,  }\item[{int}]{duration }\end{DoxyParamCaption})}
+
+
+
+Adds edge from source to destination with a certain capacity and duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & \\
+\hline
+{\em dest} & \\
+\hline
+{\em capacity} & \\
+\hline
+{\em duration} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCtcp_a1698687d02c5ef9f0470bd2f27fd0d76}\label{classCtcp_a1698687d02c5ef9f0470bd2f27fd0d76}} 
+\index{Ctcp@{Ctcp}!bfs@{bfs}}
+\index{bfs@{bfs}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{bfs()}{bfs()}}
+{\footnotesize\ttfamily void Ctcp\+::bfs (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Simple bfs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCtcp_a1f575d059a2da43ba4418d2a9d516c7e}\label{classCtcp_a1f575d059a2da43ba4418d2a9d516c7e}} 
+\index{Ctcp@{Ctcp}!bfs2@{bfs2}}
+\index{bfs2@{bfs2}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{bfs2()}{bfs2()}}
+{\footnotesize\ttfamily void Ctcp\+::bfs2 (\begin{DoxyParamCaption}\item[{int}]{v,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+B\+FS which keeps track of path 
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em end} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCtcp_af73f6bddd5dcb907b0e631b5cb9901b6}\label{classCtcp_af73f6bddd5dcb907b0e631b5cb9901b6}} 
+\index{Ctcp@{Ctcp}!getMaxCapacityOrLeastChanges@{getMaxCapacityOrLeastChanges}}
+\index{getMaxCapacityOrLeastChanges@{getMaxCapacityOrLeastChanges}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{getMaxCapacityOrLeastChanges()}{getMaxCapacityOrLeastChanges()}}
+{\footnotesize\ttfamily int Ctcp\+::get\+Max\+Capacity\+Or\+Least\+Changes (\begin{DoxyParamCaption}\item[{int}]{st,  }\item[{int}]{end,  }\item[{list$<$ int $>$ $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Output possible non-\/comparable paths that maximize group size and minimize edges. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & \\
+\hline
+{\em end} & \\
+\hline
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether function was successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCtcp_a3b6619463f2f0b91cbaa1005fa8a749d}\label{classCtcp_a3b6619463f2f0b91cbaa1005fa8a749d}} 
+\index{Ctcp@{Ctcp}!getMaxCapacityPath@{getMaxCapacityPath}}
+\index{getMaxCapacityPath@{getMaxCapacityPath}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{getMaxCapacityPath()}{getMaxCapacityPath()}}
+{\footnotesize\ttfamily int Ctcp\+::get\+Max\+Capacity\+Path (\begin{DoxyParamCaption}\item[{int}]{st,  }\item[{int}]{end,  }\item[{list$<$ int $>$ $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Determine a path for a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & \\
+\hline
+{\em end} & \\
+\hline
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+maximum group capacity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCtcp_a325e1ed4891290d147a3026779696b73}\label{classCtcp_a325e1ed4891290d147a3026779696b73}} 
+\index{Ctcp@{Ctcp}!getMaxCapacityWithUsableNodes@{getMaxCapacityWithUsableNodes}}
+\index{getMaxCapacityWithUsableNodes@{getMaxCapacityWithUsableNodes}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{getMaxCapacityWithUsableNodes()}{getMaxCapacityWithUsableNodes()}}
+{\footnotesize\ttfamily int Ctcp\+::get\+Max\+Capacity\+With\+Usable\+Nodes (\begin{DoxyParamCaption}\item[{int}]{st,  }\item[{int}]{end,  }\item[{list$<$ int $>$ $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Determine a path for a group in a graph with used nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & \\
+\hline
+{\em end} & \\
+\hline
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+maximum group capacity in used nodes graph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCtcp_a228d369e85854cee9b0e1a5c41d5a101}\label{classCtcp_a228d369e85854cee9b0e1a5c41d5a101}} 
+\index{Ctcp@{Ctcp}!load@{load}}
+\index{load@{load}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Ctcp\+::load (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads a graph from a given file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCtcp_a0fd490659728fdf34c5a5c81a06d2253}\label{classCtcp_a0fd490659728fdf34c5a5c81a06d2253}} 
+\index{Ctcp@{Ctcp}!nodesUnused@{nodesUnused}}
+\index{nodesUnused@{nodesUnused}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{nodesUnused()}{nodesUnused()}}
+{\footnotesize\ttfamily bool Ctcp\+::nodes\+Unused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check nodes being unused. 
+
+\begin{DoxyReturn}{Returns}
+true if unused nodes, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCtcp_a5eebad866c1e0a9bbd532018e309d21f}\label{classCtcp_a5eebad866c1e0a9bbd532018e309d21f}} 
+\index{Ctcp@{Ctcp}!setPathToUse@{setPathToUse}}
+\index{setPathToUse@{setPathToUse}!Ctcp@{Ctcp}}
+\doxysubsubsection{\texorpdfstring{setPathToUse()}{setPathToUse()}}
+{\footnotesize\ttfamily void Ctcp\+::set\+Path\+To\+Use (\begin{DoxyParamCaption}\item[{const list$<$ int $>$ \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Sets all nodes being used to true, others to false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+codigo/Ctcp.\+h\item 
+codigo/Ctcp.\+cpp\end{DoxyCompactItemize}
